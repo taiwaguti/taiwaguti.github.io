@@ -1,28 +1,173 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Taiwa Tacca - Sitio Web Oficial</title> 
-    <meta name="description" content="Página web oficial de Taiwa Tacca. Tarea escolar de desarrollo web indexada en Google.">
-    <meta name="author" content="Taiwa Tacca">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwa Tacca Gutiérrez - Sitio Web Oficial</title>
+    <meta name="description" content="Página web oficial de Taiwa Tacca Gutiérrez. Estudiante de Ciencia de la Computación en la Universidad Católica San Pablo.">
+    <meta name="author" content="Taiwa Tacca Gutiérrez">
     <meta name="robots" content="index, follow">
-</head>
-<body style="font-family: Arial, sans-serif; margin: 50px auto; max-width: 600px; padding: 0 20px;">
     
-    <!-- Tu nombre se queda centrado de forma elegante -->
-    <h1 style="text-align: center; margin-bottom: 40px;">Hola, soy Taiwa Tacca</h1> 
+    <!-- Estilos de Diseño (CSS) -->
+    <style>
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1a1a1e;
+            --text-color: #e1e1e6;
+            --text-secondary: #a8a8b3;
+            --accent-color: #4ea8de;
+            --accent-hover: #64dfdf;
+        }
 
-    <!-- Todo este bloque se alinea a la izquierda (esquinado) -->
-    <div style="text-align: left;">
-        <p><strong>Universidad:</strong> 
-            <a href="https://ucsp.edu.pe" target="_blank">Universidad Católica San Pablo</a>
-        </p>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
 
-        <!-- Sección de compañeros ordenada abajo -->
-        <h3 style="color: red; margin-top: 30px; margin-bottom: 10px;">Links de mis compañeros</h3>
-        <p>
-            • <a href="https://github.io" target="_blank">Link de Fernando Barra</a>
-        </p>
+        .container {
+            max-width: 650px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #29292e;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #29292e;
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            color: var(--text-color);
+        }
+
+        p strong {
+            color: var(--accent-color);
+        }
+
+        .objective-text {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .link-placeholder {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado Principal -->
+        <header>
+            <h1>Hola, soy Taiwa Tacca Gutiérrez</h1>
+            <p class="subtitle">Estudiante de Ciencia de la Computación</p>
+        </header>
+
+        <!-- Información Académica -->
+        <main>
+            <section class="section">
+                <h2>Sobre mí</h2>
+                <p>Estudio <strong>Ciencia de la Computación</strong> en la <a href="https://ucsp.edu.pe" target="_blank">Universidad Católica San Pablo</a>.</p>
+                <p>Mi colegio de procedencia es <strong>Ciencias Señor de la Joya JOG</strong>.</p>
+            </section>
+
+            <!-- Objetivo Profesional -->
+            <section class="section">
+                <h2>Mi Objetivo</h2>
+                <p class="objective-text">Desarrollar soluciones tecnológicas innovadoras mediante el software, optimizar algoritmos eficientes y aplicar bases sólidas de computación para resolver problemas complejos del mundo real.</p>
+            </section>
+
+            <!-- Lista de Cursos -->
+            <section class="section">
+                <h2>Mis Cursos</h2>
+                <ul>
+                    <li>Fundamentos de Programación</li>
+                    <li>Introducción a la Computación</li>
+                    <li>Introducción a la Vida Universitaria</li>
+                    <li>Comunicación</li>
+                    <li>Lógica</li>
+                    <li>Fundamentos Matemáticos para Computación</li>
+                </ul>
+            </section>
+
+            <!-- Profesores -->
+            <section class="section">
+                <h2>Mis Profesores</h2>
+                <p class="link-placeholder">(Próximamente se añadirán los enlaces a sus perfiles académicos)</p>
+            </section>
+
+            <!-- Compañeros -->
+            <section class="section">
+                <h2>Links de mis Compañeros</h2>
+                <p>Institución Educativa: <strong>i.e.s.j</strong></p>
+                <p class="link-placeholder">(Próximamente se añadirán los enlaces de mis compañeros)</p>
+            </section>
+        </main>
     </div>
 
 </body>
